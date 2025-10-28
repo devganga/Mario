@@ -3,9 +3,8 @@
 namespace Mario.Web.Endpoints;
 public class Users : EndpointGroupBase
 {
-    public override void Map(WebApplication app)
+    public override void Map(RouteGroupBuilder groupBuilder)
     {
-        app.MapGroup(this)
-            .MapIdentityApi<ApplicationUser>();
+        groupBuilder.MapIdentityApi<ApplicationUser>();
     }
 }

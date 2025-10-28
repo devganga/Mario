@@ -4,7 +4,7 @@ using Mario.Application.TodoLists.Commands.CreateTodoList;
 using Mario.Application.TodoLists.Commands.PurgeTodoLists;
 using Mario.Domain.Entities;
 
-using static Testing;
+using static Mario.Application.FunctionalTests.Testing;
 
 namespace Mario.Application.FunctionalTests.TodoLists.Commands;
 public class PurgeTodoListsTests : BaseTestFixture

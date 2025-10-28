@@ -3,7 +3,7 @@ using Mario.Application.TodoItems.Commands.UpdateTodoItem;
 using Mario.Application.TodoLists.Commands.CreateTodoList;
 using Mario.Domain.Entities;
 
-using static Testing;
+using static Mario.Application.FunctionalTests.Testing;
 
 namespace Mario.Application.FunctionalTests.TodoItems.Commands;
 public class UpdateTodoItemTests : BaseTestFixture

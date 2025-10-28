@@ -2,7 +2,7 @@
 using Mario.Application.TodoLists.Commands.DeleteTodoList;
 using Mario.Domain.Entities;
 
-using static Testing;
+using static Mario.Application.FunctionalTests.Testing;
 
 namespace Mario.Application.FunctionalTests.TodoLists.Commands;
 public class DeleteTodoListTests : BaseTestFixture

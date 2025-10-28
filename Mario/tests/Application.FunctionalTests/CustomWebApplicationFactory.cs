@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-using static Testing;
+using static Mario.Application.FunctionalTests.Testing;
 
 namespace Mario.Application.FunctionalTests;
 public class CustomWebApplicationFactory : WebApplicationFactory<Program>

@@ -2,7 +2,7 @@
 using Mario.Domain.Entities;
 using Mario.Domain.ValueObjects;
 
-using static Testing;
+using static Mario.Application.FunctionalTests.Testing;
 
 namespace Mario.Application.FunctionalTests.TodoLists.Queries;
 public class GetTodosTests : BaseTestFixture
