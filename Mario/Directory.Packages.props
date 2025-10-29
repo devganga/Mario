@@ -40,6 +40,8 @@
     <PackageVersion Include="Respawn" Version="6.2.1" />
     <PackageVersion Include="Shouldly" Version="4.3.0" />
     <PackageVersion Include="System.Configuration.ConfigurationManager" Version="9.0.0" />
+	
+	<PackageVersion Include="Serilog.AspNetCore" Version="9.0.0" />
 
     
     

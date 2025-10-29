@@ -1,7 +1,16 @@
 using Mario.Infrastructure.Data;
+using Serilog;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .Enrich.FromLogContext()
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 // Add services to the container.
 builder.AddServiceDefaults();
 builder.AddKeyVaultIfConfigured();
@@ -9,7 +18,16 @@ builder.AddApplicationServices();
 builder.AddInfrastructureServices();
 builder.AddWebServices();
 
+//builder.Logging.AddSerilog();
+//builder.Host.UseSerilog();
+//builder.Services.AddSerilog(new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration));
 var app = builder.Build();
+
+//app.UseSerilogRequestLogging(opts =>
+//{
+//    opts.MessageTemplate = "Handled {RequestPath}";
+//});
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
